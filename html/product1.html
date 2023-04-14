@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CODING-MICHAEL CLARK</title>
+    <style>
+        /* internal css */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #EFEFEF;
+            font-family: sans-serif;
+        }
+
+        .container {
+            background-color: #ffff;
+            height: 390px;
+            width: 795px;
+            margin: 155px auto auto 370px;
+            border-radius: 40px;
+            display: flex;
+        }
+
+        img {
+            /* styling image of the products  */
+            height: 300px;
+            width: 228px;
+            margin: 47px auto auto 36px;
+        }
+
+        .image {
+            border-right: 6px solid #0175A2;
+            width: 300px;
+            height: 390px;
+        }
+
+        #content,
+        #order {
+            height: 341px;
+            width: 411px;
+            margin: 35px auto auto 39px;
+            text-align: justify;
+        }
+
+        #content h4 {
+            /* styling header */
+            color: #0175A2;
+            font-size: 40px;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        span.price p {
+            font-size: 32px;
+            margin-top: 30px;
+        }
+
+        button {
+            /* styling order button */
+            margin: 40px;
+            height: 40px;
+            width: 125px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        #order {
+            display: none;
+        }
+
+        #content {
+            display: block;
+        }
+
+        input {
+            height: 32px;
+            width: 307px;
+        }
+
+        #error,
+        #error2,
+        #error3,
+        #error4 {
+            /* styling message that comes when there is no value insertion */
+            height: 15px;
+            width: auto;
+        }
+
+        #order button {
+            margin: 0px auto auto 70px;
+        }
+
+        #output {
+            text-align: center;
+            padding-top: 13px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- image of book -->
+        <div class="image">
+            <img src="/images/book1.jpg" alt="">
+        </div>
+        <div id="content">
+            <!-- description of book -->
+            <h4>CODING</h4>
+            <p id="main">This book helps to understand and learn python programming, Basics of C++, Basics of SQL, and
+                helps to
+                understand about linux programming.</p>
+            <p><b>Author: Michael Clark</b></p>
+            <span class="price">
+                <p>$20.0</p>
+            </span>
+            <button onclick="order()">Order Now</button>
+        </div>
+        <!-- order form -->
+        <div id="order">
+            <p><b>Full Name</b></p>
+            <input type="text" id="fullname">
+            <p id="error"></p>
+            <p><b>Phone Number</b></p>
+            <input type="text" id="phone"><br>
+            <p id="error2"></p>
+            <p><b>E-mail</b></p>
+            <input type="text" id="e-mail"><br>
+            <p id="error3"></p>
+            <p><b>Delivery Address</b></p>
+            <input type="text" id="city" placeholder="City*" style="width: 100px;">
+            <input type="text" id="State" placeholder="State / Province" style="width: 100px;">
+            <input type="text" id="Zip Code" placeholder="Zip Code*" style="width: 100px;"><br>
+            <p id="error4"></p>
+            <p><b>Quantity</b></p>
+            <select name="quantity" id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            <button onclick="error()">Order</button>
+        </div>
+    </div>
+    <p id="output"></p>
+    <script>
+        // script at first click of Order
+        function order() {
+            var a = document.getElementById("order");
+            var b = document.getElementById("content");
+            b.style.display = "none";
+            a.style.display = "block";
+        }
+        // script at order now form
+        function error() {
+            var a = document.getElementById("fullname").value;
+            var b = document.getElementById("phone").value;
+            var c = document.getElementById("e-mail").value;
+            var d = document.getElementById("city").value;
+            if (a == "" || b == "" || c == "" || d == "") {
+                if (a == "") {
+                    var e = document.getElementById("error");
+                    e.innerHTML = "Name cannot be empty!"
+                    e.style.color = "red";
+                    e.style.fontSize = "12px";
+                }
+                if (b == "") {
+                    var f = document.getElementById("error2");
+                    f.innerHTML = "Phone Number cannot be empty!"
+                    f.style.color = "red";
+                    f.style.fontSize = "12px";
+                }
+                if (c == "") {
+                    var g = document.getElementById("error3");
+                    g.innerHTML = "E-mail cannot be empty!"
+                    g.style.color = "red";
+                    g.style.fontSize = "12px";
+                }
+                if (d == "") {
+                    var h = document.getElementById("error4");
+                    h.innerHTML = "Address cannot be empty!"
+                    h.style.color = "red";
+                    h.style.fontSize = "12px";
+                }
+            }
+            else {
+                var output = document.getElementById("output");
+                output.innerHTML = "Thank you " + a + " for ordering our product. We'll contact and place your order at time :)";
+                alert("Ordered Succesfully...")
+            }
+        }
+    </script>
+</body>
+
+</html>

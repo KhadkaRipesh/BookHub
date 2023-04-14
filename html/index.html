@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mero Website</title>
+    <!--external css link-->
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        button {
+            border-radius: 15px;
+            width: 120px;
+            padding: 9px;
+            margin-top: -23px;
+            background-color: #0175A2;
+            color: #EFEFEF;
+            border: 1px solid #0175A2;
+        }
+
+        button.shop {
+            width: 160px;
+            height: 50px;
+            border-radius: 10px;
+            font-size: 20px;
+        }
+
+        .flex a {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header start -->
+    <div id="header">
+        <div class="image">
+            <img src="/images/book_img.png" alt="logopic" height="70px" style="margin-left: 150px;">
+        </div>
+        <!-- nav bar start -->
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#" id="h">HOME</a></li>
+                <li><a href="#product" id="h1">PRODUCT</a></li>
+                <li><a href="#blog" id="h2">BLOG</a></li>
+                <li><a href="#research" id="h3">RESEARCH</a></li>
+                <li><a href="#about" id="h4">ABOUT US</a></li>
+                <li><a href="#contact" id="h5">CONTACT</a></li>
+                <li><a href="login.html" id="h6"><button>Log In</button></a></li>
+            </ul>
+        </div>
+        <!-- nav bar end -->
+        <!-- inline css in theme changer button -->
+        <button onclick="change()"
+            style="width: 90px; height: 30px; font-size: 10px; margin-top: 32px; background-color: black; border: 1 px solid black;">
+            Change
+            theme</button>
+    </div>
+    <!-- end header-->
+    <!-- home page start -->
+    <div id="home">
+        <div class="text">
+            <h1 id="welcome">Welcome to <span class="main">BookHub</span></h1>
+            <p class="color" id="slogan">New way to explore Books<br>Read Reveiws, Find New Books</p>
+        </div>
+        <div class="picture">
+            <img src="/images/books.png" alt="bookspic">
+        </div>
+        <div class="go-to">
+            <a href="#product"><button class="shop">Shop Now</button></a>
+        </div>
+    </div>
+    <!-- end home page-->
+    <!-- product page -->
+    <div id="product">
+        <!-- product header -->
+        <div class="head">
+            <h1 id="title1">OUR <span class="main">PRODUCTS</span></h1>
+        </div>
+        <div class="flex">
+            <ul>
+                <!-- product list -->
+                <li>
+                    <a onclick="check()">
+                        <div class="point">
+                            <img src="/images/book1.jpg" alt="book1">
+                            <hr>
+                            <div class="detail">
+                                <h4>CODING</h4>
+                                <p class="color">by <span class="main">Michael Clark</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="check()">
+                        <div class="point">
+                            <img src="/images/book2.jpg" alt="book2">
+                            <hr>
+                            <div class="detail">
+                                <h4>COMPUTER PROGRAMMING</h4>
+                                <p class="color">by <span class="main">Alexander Bell</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="check()">
+                        <div class="point">
+                            <img src="/images/book3.jpg" alt="book3">
+                            <hr>
+                            <div class="detail">
+                                <h4>BLOCKCHAIN</h4>
+                                <p class="color">by <span class="main">Alan Wright</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="check()">
+                        <div class="point">
+                            <img src="/images/book5.png" alt="book4">
+                            <hr>
+                            <div class="detail">
+                                <h4>DJANGO 3 BY EXAMPLE</h4>
+                                <p class="color">by <span class="main">Antonio Mele</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="check()">
+                        <div class="point">
+                            <img src="/images/book6.jpg" alt="book5">
+                            <hr>
+                            <div class="detail">
+                                <h4>JAVA PROGRAMMING</h4>
+                                <p class="color">by <span class="main">Mr Kotinia</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="check()">
+                        <div class="point">
+                            <img src="/images/book7.jpg" alt="book6">
+                            <hr>
+                            <div class="detail">
+                                <h4>C# 9.0 IN NUTSHELL</h4>
+                                <p class="color">by <span class="main">Joseph Albahari</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="check()">
+                        <div class="point">
+                            <img src="/images/book8.jpg" alt="book7">
+                            <hr>
+                            <div class="detail">
+                                <h4>ALGORITHM ILLIMUNATED</h4>
+                                <p class="color">by <span class="main">Tim Roughgarden</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a onclick="check()">
+                        <div class="point">
+                            <img src="/images/book9.jpg" alt="book8">
+                            <hr>
+                            <div class="detail">
+                                <h4>OPTIMIZING C++</h4>
+                                <p class="color">by <span class="main">Steve Heller</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <!-- end product list -->
+            </ul>
+        </div>
+    </div>
+    <!-- end product page -->
+    <!-- blog page started -->
+    <div id="blog">
+        <div class="head">
+            <h1 id="title2">BL<span class="main">OG</span></h1>
+        </div>
+        <div class="content-blog" id="blog-bg">
+            <!-- image of blog page -->
+            <div class="tech-image">
+                <img src="/images/tech.png" alt="tech" height="450px">
+            </div>
+            <div class="tech-text">
+                <!-- contents of blog page -->
+                <h1 id="blog-h1">AFFECT OF TECHNOLOGY</h1>
+                <p id="blog-p1"><span class="main">Technology </span>has an impact on how people communicate, learn, and
+                    think. It
+                    contributes to society and
+                    influences how individuals interact on a daily basis. In today's world, technology plays a critical
+                    role. It has both beneficial and negative repercussions on the planet, as well as a direct impact on
+                    people's lives. We live in a time when technical advancements are commonplace. Cell phones and the
+                    internet are some examples.</p>
+                <p id="blog-p2">With the invention of the <span class="main">internet</span>, we now have access to
+                    information at
+                    all hours of the day and night, and we can find practically anything online. It also makes it easy
+                    for us to complete our assignments. We can take quizzes and exams more readily, and teachers can
+                    hold more effective online classes.</p>
+            </div>
+        </div>
+    </div>
+    <!-- end blog page -->
+    <!-- research page -->
+    <div id="research">
+        <div class="head">
+            <h1 id="title3">RE<span class="main">SEARCH</span></h1>
+        </div>
+        <div class="row" id="row1">
+            <div class="image-left">
+                <img src="/images/research1.jpg" alt="research1">
+            </div>
+            <div class="content-right">
+                <p id="row1p"> The goal is to make home page from this design. I like the format of this design of
+                    Bookshelf where
+                    picture is on one side and small contents are on
+                    other side.
+                    And also there is one button below.
+                    So, i have made this design using pure html and css.
+                </p>
+            </div>
+        </div>
+        <div class="row" id="row2">
+            <div class="image-right">
+                <img src="/images/research2.jpg" alt="research2">
+            </div>
+            <div class="content-left">
+                <p id="row2p">The product list of this design looks cool that i liked it. The product page contains all
+                    the product
+                    available in the store. The benefit of creating this page is that the user may quickly find their
+                    desired goods. I have made it using flex-box property of
+                    css.</p>
+            </div>
+        </div>
+        <div class="row" id="row3">
+            <div class="image-left">
+                <img src="/images/research3.jpg" alt="research3">
+            </div>
+            <div class="content-right">
+                <p id="row3p">The features i liked most about this design is that there is image in one side and
+                    contents written
+                    in another side. I have made like this design in research section which looks attractive. The main
+                    aim of making this page is that to show from where we research and give references to them. </p>
+            </div>
+        </div>
+        <div class="row" id="row4">
+            <div class="image-right">
+                <img src="/images/research4.jpg" alt="research4">
+            </div>
+            <div class="content-left">
+                <p id="row4p">I like about page of this design where image is on one side and website description is on
+                    another.
+                    The benefit of making this page is to help customer to know about website and its objectives. </p>
+            </div>
+        </div>
+        <div class="row" id="row5">
+            <div class="image-left">
+                <img src="/images/research5.jpg" alt="research5">
+            </div>
+            <div class="content-right">
+                <p id="row5p">The primary goal of using this website is to develop a Order page. As a result, I included
+                    it in my
+                    website. The order page contains all of the website's book information. The customer may quickly
+                    find
+                    their desired goods by filling out the form in order section.</p>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="head">
+            <h1 id="title4">ABOUT <span class="main">US</span></h1>
+        </div>
+        <div class="content-about" id="about-bg">
+            <div class="about-text">
+                <p id="about-p">This Ecommerce Platforms is a review site that shows and sold the good and great books
+                    of online
+                    store. We
+                    strive to provide easy to read reviews that will help you choose which ecommerce book is right for
+                    you. We maintain an affiliate relationship with some of the products reviewed as well, which means
+                    we get a percentage of a sale if you click over from our site.</p>
+                <p id="about-p2"><span class="main"> BookHub</span> website allows people to buy books. We can order
+                    products over the
+                    internet. And ordered products will be delivered in peoples areas within the time.</p>
+            </div>
+            <div class="about-image">
+                <img src="/images/about.png" alt="about">
+            </div>
+        </div>
+    </div>
+    <!-- end research page -->
+    <!-- contact page -->
+    <div id="contact">
+        <div class="head">
+            <h1 id="title5">CONTACT <span class="main">US</span></h1>
+        </div>
+        <!-- message box -->
+        <div class="line">
+            <div class="col1">
+                <!-- message from -->
+                <div class="box-msg" id="b-m">
+                    <h2 id="msg">Message Us</h2>
+                    <input type="text" id="name" placeholder="Your Full Name"><br>
+                    <input type="text" id="email" placeholder="Your E-mail"><br>
+                    <textarea name="Messages" id="message" placeholder="Write your messages here..." cols="65" rows="15"
+                        style="margin-left: 34px;"></textarea><br>
+                    <button onclick="response()">Send</button>
+                    <p id="response"></p>
+                </div>
+            </div>
+            <!-- end message box -->
+            <!-- contact boxes -->
+            <div class="col2">
+                <div class="flex1">
+                    <div class="padding">
+                        <a href="">
+                            <div class="box">
+                                <a href=""></a>
+                                <img src="/images/Address.png" alt="address">
+                                <h3>Address</h3>
+                                <p>Itahari-1, Sunsari</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="padding">
+                        <a href="tel:9825013777">
+                            <div class="box">
+                                <img src="/images/phone.png" alt="">
+                                <h3>Phone</h3>
+                                <p>+977 9825013777</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="flex2">
+                    <div class="padding">
+                        <a href="">
+                            <div class="box">
+                                <img src="/images/fax.png" alt="">
+                                <h3>Fax No</h3>
+                                <p>025 582609</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="padding">
+                        <a href="mailto:khadkanripesh@gmail.com">
+                            <div class="box">
+                                <img src="/images/Mail (1).png" alt="">
+                                <h3>E-Mail</h3>
+                                <p>khadkanripesh@gmail.com</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- end contact boxes -->
+        </div>
+    </div>
+    <!-- end contact page -->
+</body>
+<script>
+    // javascript started
+    // clicking product without logged in
+    function check() {
+        alert("Log In required!");
+    }
+    // script in send button of message us
+    function response() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+        if (name != "" && email != "" && message != "") {
+            var a = document.getElementById("response");
+            a.innerHTML = "We well give response to your messages as soon as possible.";
+        }
+    }
+    // theme changer dark-theme
+    function change() {
+        document.body.style.backgroundColor = "#131e30";
+        document.getElementById("header").style.backgroundColor = "#131e30";
+        document.getElementById("h").style.color = "#e1e6f7";
+        document.getElementById("h1").style.color = "#e1e6f7";
+        document.getElementById("h2").style.color = "#e1e6f7";
+        document.getElementById("h3").style.color = "#e1e6f7";
+        document.getElementById("h4").style.color = "#e1e6f7";
+        document.getElementById("h5").style.color = "#e1e6f7";
+        document.getElementById("welcome").style.color = "#e1e6f7";
+        document.getElementById("slogan").style.color = "#e1e6f7";
+        document.getElementById("title1").style.color = "#e1e6f7";
+        document.getElementById("title2").style.color = "#e1e6f7";
+        document.getElementById("title3").style.color = "#e1e6f7";
+        document.getElementById("title4").style.color = "#e1e6f7";
+        document.getElementById("title5").style.color = "#e1e6f7";
+        document.getElementById("blog-bg").style.backgroundColor = "rgb(17 34 64)";
+        document.getElementById("blog-h1").style.color = "white";
+        document.getElementById("blog-p1").style.color = "#ccd6f6";
+        document.getElementById("blog-p2").style.color = "#ccd6f6";
+        document.getElementById("row1").style.backgroundColor = "rgb(17 34 64)";
+        document.getElementById("row2").style.backgroundColor = "rgb(17 34 64)";
+        document.getElementById("row3").style.backgroundColor = "rgb(17 34 64)";
+        document.getElementById("row4").style.backgroundColor = "rgb(17 34 64)";
+        document.getElementById("row5").style.backgroundColor = "rgb(17 34 64)";
+        document.getElementById("row1p").style.color = "#ccd6f6";
+        document.getElementById("row2p").style.color = "#ccd6f6";
+        document.getElementById("row3p").style.color = "#ccd6f6";
+        document.getElementById("row4p").style.color = "#ccd6f6";
+        document.getElementById("row5p").style.color = "#ccd6f6";
+        document.getElementById("about-bg").style.backgroundColor = "rgb(17 34 64)";
+        document.getElementById("about-p").style.color = "#ccd6f6";
+        document.getElementById("about-p2").style.color = "#ccd6f6";
+        document.getElementById("b-m").style.backgroundColor = "rgb(17 34 64)";
+        document.getElementById("msg").style.color = "white";
+
+
+    }
+</script>
+<!-- end javascript -->
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp-BookHub</title>
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="subheader">
+                <img src="/images/book_img.png" alt="logo" height="83px">
+            </div>
+            <div class="title">
+                <h6>BookHub</h6>
+            </div>
+        </div>
+        <div class="main">
+            <p><b>Email</b></p>
+            <input type="text" id="e-mail" placeholder="*Email">
+            <p id="error"></p>
+            <p><b>Password</b></p>
+            <input type="password" id="password" placeholder="*Password"><br>
+            <p id="error2"></p>
+            <p><b>First Name</b></p>
+            <input type="text" id="firstname" placeholder="*First Name">
+            <p id="error3"></p>
+            <p><b>Last Name</b></p>
+            <input type="text" id="lastname" placeholder="*Last Name">
+            <p id="error4"></p>
+            <!-- <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="css">Female</label><br> -->
+            <div class="terms">
+                <p>By clicking Register, I confirm that I have read <br>and agree to the<span class="main">Book Hub
+                        Privacy
+                        Statement</span> and the <span class="main">BookHub Web Site Terms and Conditions.</span>
+                </p>
+            </div>
+            <!-- <a href="index.html"> -->
+            <button onclick="run()">Register</button>
+            <!-- </a> -->
+        </div>
+        <div class="bottom">
+            <a href="login.html">
+                <p>Back to login</p>
+            </a>
+        </div>
+    </div>
+    <script>
+        function run() {
+            var a = document.getElementById("e-mail").value;
+            var b = document.getElementById("password").value;
+            var c = document.getElementById("firstname").value;
+            var d = document.getElementById("lastname").value;
+            var e = document.getElementById("error");
+            var f = document.getElementById("error2");
+            var g = document.getElementById("error3");
+            var h = document.getElementById("error4");
+            if (a == "" || b == "" || c == "" | d == "") {
+                if (a == "") {
+                    e.innerHTML = "This field cannot be left blank !";
+                    e.style.color = "red";
+                    e.style.fontSize = "14px";
+                }
+                if (b == "") {
+                    f.innerHTML = "This field cannot be left blank !";
+                    f.style.color = "red";
+                    f.style.fontSize = "14px"
+                }
+                if (c == "") {
+                    g.innerHTML = "This field cannot be left blank !";
+                    g.style.color = "red";
+                    g.style.fontSize = "14px";
+                }
+                if (d == "") {
+                    h.innerHTML = "This field cannot be left blank !";
+                    h.style.color = "red";
+                    h.style.fontSize = "14px";
+                }
+            }
+            else {
+                window.location.href = "home.html";
+            }
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-BookHub</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="subheader">
+                <img src="/images/book_img.png" alt="logo" height="83px">
+            </div>
+            <div class="title">
+                <h6>BookHub</h6>
+            </div>
+        </div>
+        <div class="main">
+            <p><b>Email</b></p>
+            <input type="text" id="e-mail">
+            <p id="error"></p>
+            <p><b>Password</b></p>
+            <input type="password" id="password"><br>
+            <p id="error2"></p>
+            <button onclick="run()">Log In</button>
+        </div>
+        <div class="bottom">
+            <p>Don't have an account? <span><a href="signup.html"> Sign Up</a></span></p>
+        </div>
+    </div>
+</body>
+<script>
+    function run() {
+        var a = document.getElementById("e-mail").value;
+        var b = document.getElementById("password").value;
+        var c = document.getElementById("error");
+        var d = document.getElementById("error2");
+        if (a == "") {
+            c.innerHTML = "Input E-mail";
+            c.style.color = "red";
+            c.style.fontSize = "14px";
+        }
+        if (b == "") {
+            d.innerHTML = "Input Password";
+            d.style.color = "red";
+            d.style.fontSize = "14px";
+        }
+        else {
+            window.location.href = "home.html";
+        }
+    }
+</script>
+
+</html>

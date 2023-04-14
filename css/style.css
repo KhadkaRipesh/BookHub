@@ -1,0 +1,307 @@
+/* external css */
+body {
+    background-color: #EFEFEF;
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+p.color {
+    color: #2d3748;
+}
+
+li {
+    list-style-type: none;
+    padding: 21px;
+}
+
+ul {
+    display: flex;
+    margin-bottom: -3px;
+}
+
+#header {
+    /* nav bar will remain in top at any page */
+    position: fixed;
+    display: flex;
+    background-color: #EFEFEF;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #2d3748;
+    font-size: 15px;
+}
+
+.nav-bar a:hover {
+    /* change color on hover */
+    color: #0175A2;
+}
+
+.nav-bar {
+    margin-left: 360px;
+}
+
+#home {
+    font-size: 27px;
+    padding-top: 62px;
+    padding: 275px 100px 150px 195px;
+}
+
+span.main {
+    color: #0175A2;
+}
+
+.picture {
+    /* align picture of home page */
+    margin-top: -304px;
+    margin-left: 604px;
+}
+
+.go-to {
+    /* button of home page  */
+    margin-top: -125px;
+    margin-left: 56px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#product {
+    height: auto;
+}
+
+.flex ul {
+    /* display flex to products */
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 85px;
+}
+
+.flex li {
+    /* align products */
+    background-color: #ffff;
+    margin: 30px;
+    height: 352px;
+    width: 261px;
+    border-radius: 15px;
+    transition: box-shadow .3s;
+    padding: 0px;
+}
+
+.head {
+    /* style header of all pages */
+    text-align: center;
+    font-size: 27px;
+    padding-top: 38px;
+}
+
+.flex ul li img {
+    /* image of products  */
+    margin: 23px 23px 0px 26px;
+    width: 208px;
+    height: 270px;
+}
+
+.detail h4,
+p {
+    margin: 0;
+}
+
+.detail {
+    text-align: center;
+
+}
+
+.content-blog,
+.content-about {
+    /* style blog and about page */
+    height: 600px;
+    width: 1160px;
+    margin-left: 205px;
+    background-color: #ffff;
+    display: flex;
+    border-radius: 15px;
+}
+
+.tech-image {
+    /* style of blog page image */
+    margin: 95px;
+}
+
+.tech-text {
+    /* style of blog page content */
+
+    text-align: center;
+}
+
+.tech-text p {
+    /* styling paragraph of blog page */
+    font-size: 22px;
+    text-align: justify;
+    color: #2d3748;
+    padding-top: 30px;
+    padding-right: 20px;
+}
+
+.tech-text h1 {
+    margin-top: 70px;
+}
+
+.row {
+    /* styling research section */
+    height: 340px;
+    width: 1240px;
+    background-color: #ffff;
+    margin-left: 160px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.image-left,
+.content-left {
+    float: left;
+}
+
+.image-right,
+.content-right {
+    float: right;
+}
+
+.row img {
+    /* styling image of research section */
+    height: 265px;
+    width: 505px;
+    margin: 42px;
+}
+
+.content-left,
+.content-right {
+    /* styling content of research page */
+    height: 200px;
+    width: 500px;
+    margin: 74px 77px 16px 74px;
+    font-size: 22px;
+    padding-top: 22px;
+
+}
+
+.flex li:hover {
+    /* style on hover of products */
+    box-shadow: 0 0 20px #0175A2;
+}
+
+.about-image img {
+    /* styling about page image */
+    height: 575px;
+    width: 518px;
+    margin: 20px;
+}
+
+.about-text p {
+    /* styling about page content */
+    color: #2d3748;
+    font-size: 22px;
+    padding: 75px;
+    margin-bottom: -110px;
+    margin-top: 15px;
+}
+
+.contact-row {
+    display: flex;
+}
+
+#contact {
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.sub h3,
+h6 {
+    margin: 0;
+}
+
+.sub h6 {
+    color: #58585b;
+}
+
+.sub h3 {
+    color: #2d3748;
+}
+
+.line {
+    display: flex;
+}
+
+.box-msg {
+    /* styling message us */
+    height: 600px;
+    width: 700px;
+    background-color: rgb(187, 209, 224);
+    margin-left: 600px;
+    margin-top: 43px;
+    border-radius: 35px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.box {
+    /* styling contact boxes */
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 40px 0 40px;
+    cursor: pointer;
+    text-align: center;
+    transition: box-shadow .6s;
+}
+
+.flex1,
+.flex2 {
+    display: flex;
+}
+
+.col2 {
+    /* styling message us container of contact page */
+    margin-left: -1064px;
+    margin-top: 105px;
+}
+
+.box-msg input {
+    /* styling input types in contact */
+    height: 39px;
+    width: 485px;
+    margin-left: 37px;
+    margin-bottom: 12px;
+}
+
+.box-msg h2 {
+    font-family: initial;
+    padding-top: 20px;
+    font-size: 44px;
+}
+
+.col2 img {
+    height: 80px;
+}
+
+.box:hover {
+    /* styling box hover */
+    box-shadow: 0 0 20px #0175A2;
+}
+
+.padding {
+    padding: 0px;
+}
+
+p#response {
+    /* styling responsed message that comes when sending messages */
+    font-size: 13px;
+    padding-top: 15px;
+}
+
+#contact a {
+    cursor: default;
+}
